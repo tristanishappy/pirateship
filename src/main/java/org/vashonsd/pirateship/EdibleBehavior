@@ -1,0 +1,4 @@
+public interface EdibleBehavior
+{
+  public void effect(String type, int value);
+}
