@@ -2,6 +2,9 @@ package org.vashonsd.pirateship.item;
 
 import java.util.*;
 
+import org.vashonsd.pirateship.interactions.Response;
+import org.vashonsd.pirateship.item.typeInterfaces.ReadBehavior;
+
 public class ItemType
 {
     private ArrayList<Tag> tags;
@@ -71,6 +74,7 @@ public class ItemType
     
     public Response read()
     {
+		return null;
     	
     }
     
