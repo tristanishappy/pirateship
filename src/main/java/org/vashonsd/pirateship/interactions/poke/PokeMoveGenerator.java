@@ -5,6 +5,26 @@ public class PokeMoveGenerator {
 	public PokeMoveGenerator(){}
 	
 	// moves need (name, type, power, accuracy, healthChange, myAttackChang, attackChange, myDefenseChange, defenseChange, mySpeedChange, speedChange, myAccuracyChange, accuracyChange)
+	public PokeMove batPunch() {
+		 return new PokeMove("Bat-Punch", "punch your opponent with the power of justice", "normal", 50, 100, 0, 0, 0, -10, 0, 0, 0, 0, 0);
+	}
+	
+	public PokeMove intimidate() {
+		 return new PokeMove("Intimidate", "scare your opponent with the power of justice", "normal", 0, 100, 0, 0, 8, 0, 8, 0, -5, 0, 5);
+	}
+	
+	public PokeMove smokePellet() {
+		 return new PokeMove("Smoke Pellet", "small explosive that releases alot of smoke", "normal", 0, 100, 0, 5, 3, 5, 3, 5, 0, 0, 0);
+	}
+	
+	public PokeMove batBat() {
+		 return new PokeMove("Bat-Bat", "Smack them with a Bat-Bat", "normal", 40, 85, 0, 0, 0, -5, 0, 0, 0, 0, 0);
+	}
+	
+	public PokeMove batarang() {
+		 return new PokeMove("Bat-a-rang", "Throw a Batarang", "normal", 15, 85, 0, 0, 0, 8, 0, 10, 0, 0, 0);
+	}
+	
 	public PokeMove tackle() {
 		 return new PokeMove("Tackle", "A full-body charge attack.", "normal", 35, 90, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 	}
