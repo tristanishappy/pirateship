@@ -237,4 +237,79 @@ public class PokemonGenerator {
 	
 	}
 	
+	public Pokemon batman()
+	{
+		Pokemon batman = new Pokemon("Batman", "Justice incarnate.");
+		batman.setMaxHP(50);
+		batman.setHP(bulbasaur.getMaxHP());
+		batman.setAttack(30);
+		batman.setDefense(70);
+		batman.setSpeed(75);
+		batman.setAccuracy(100);
+		batman.setType(new PokeType("water"));
+		
+		ArrayList<PokeMove> learnable = new ArrayList<PokeMove>();
+		learnable.add(gen.tackle());
+		//learnable.add(gen.growl());
+		//learnable.add(gen.vineWhip());
+		//learnable.add(gen.razorLeaf());
+		//learnable.add(gen.growth());
+		batman.setLearnable(learnable);
+		
+		batman.setPrintOut
+		(  "          .  ." + "\n" +
+		   "          |\_|\"" + "\n" +
+		   "          | a_a\"" + "\n" +
+		   "          | | "]" + "\n" +
+		   "      ____| '-\"___	" + "\n" +
+		   "     /.----.___.-'\"" + "\n" +
+		   "    //        _    \"" + "\n" +
+		   "   //   .-. (~v~) /|" + "\n" +
+		   " |'|  /\":  .--  / \"" + "\n" +
+		   " // |-/  \"_/____/\"/~|" + "\n" +
+		   "|/  \" |  []_|_|_] \" |" + "\n" +
+		   "| \"  | \" |___   _\" ]_}" + "\n" +
+		   "| |  '-' /   '.'  |" + "\n" +
+		   "| |     /    /|:  |" + "\n" +
+		   "| |     |   / |:  /\"" + "\n" +
+		   "| |     /  /  |  /  \"" + "\n" +
+		   "| |    |  /  /  |    \"" + "\n" +
+		   "\" |    |/\"/  |/|/\""    \"" + "\n" +
+		   "\"|\"" |\"|  |  | / /\"/\"__\"" + "\n" +
+		   " \"" \"| | /   | |__" + "\n" +
+		   "      / |   |____)" + "\n" +
+		   "      |___/)")
+		
+		
+	ArrayList<String> head = new ArrayList<String>();
+	head.add("                  T\ T\");
+	head.add("                  | \| \");
+	head.add("                  |  |  :");
+	head.add("             _____I__I  |");
+	head.add("           .'            '.");
+	head.add("         .'                '");
+	head.add("         |   ..             '");
+	head.add("         |  /__.            |");
+	head.add("         :.' -'             |");
+	head.add("        /__.                |");
+	head.add("       /__, \               |");
+	head.add("          |__\        _|    |");
+	head.add("          :  '\     .'|     |");
+	head.add("          |___|_,,,/  |     |    _..--.");
+	head.add("       ,--_-   |     /'      \../ /  /\\");
+	head.add("      ,'|_ I---|    7    ,,,_/ / ,  / _\\");
+	head.add("    ,-- 7 \|  / ___..,,/   /  ,  ,_/   '-----.");
+	head.add("   /   ,   \  |/  ,____,,,__,,__/            '\");
+	head.add("  ,   ,     \__,,/                             |");
+	head.add("  | '.       _..---.._                         !.");
+	head.add("  ! |      .' z_M__s. '.                        |");
+	head.add("  .:'      | (-_ _--')  :          L            !");
+	head.add("  .'.       '.  Y    _.'             \,         :");
+	head.add("   .          '-----'                 !          .");
+	head.add("   .           /  \                   .          . ");
+	batman.setHead(head);
+	
+	return batman;
+	
+	}
 }
