@@ -16,7 +16,7 @@ public class Location extends Actor {
 	{
 	   super(name, "here", description, splash);
 	   this.name = name;
-	   this.description = description;
+	   this.description = description + this.getInventory();
 	   this.setTraversable(true);
 	}
 	

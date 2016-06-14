@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import org.vashonsd.pirateship.commands.Command;
 import org.vashonsd.pirateship.interactions.*;
 
+import rocks.xmpp.addr.Jid;
+
 
 /**
  * @author andy
@@ -40,7 +42,17 @@ public class Player extends Actor {
 		super(name, name, description, name + " is here!");
 		interactions = new AvailableInteractions();
 	}
+	/**
+	 * Jid adding for XMPP class
+	**/
+	private Jid jid;
 	
+	public void setJid(Jid jid){
+		this.jid = jid;
+	}
+	public Jid getJid(){
+		return this.jid;
+	}
 	/** 
 	 * Returns a view of the current environment, in the form of a string.
 	 * By default, for any objects in the current environment (except the Player itself), return their splash text.

@@ -31,6 +31,27 @@
     	<artifactId>gson</artifactId>
     	<version>2.6.2</version>
     </dependency>
+    <dependency>
+    	<groupId>rocks.xmpp</groupId>
+    	<artifactId>root</artifactId>
+    	<version>0.7.0-beta-1</version>
+    	<type>pom</type>
+    </dependency>
+    <dependency>
+    	<groupId>rocks.xmpp</groupId>
+    	<artifactId>xmpp-core</artifactId>
+    	<version>0.7.0-beta-1</version>
+    </dependency>
+    <dependency>
+    	<groupId>rocks.xmpp</groupId>
+    	<artifactId>xmpp-core-client</artifactId>
+    	<version>0.7.0-beta-1</version>
+    </dependency>
+    <dependency>
+    	<groupId>rocks.xmpp</groupId>
+    	<artifactId>precis</artifactId>
+    	<version>0.1.0</version>
+    </dependency>
   </dependencies>
   <build>
   	<plugins>

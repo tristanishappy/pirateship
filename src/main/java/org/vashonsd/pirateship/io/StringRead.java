@@ -2,6 +2,8 @@ package org.vashonsd.pirateship.io;
 
 import java.io.*;
 
+import rocks.xmpp.core.stanza.model.Message;
+
 /**
  * @author andy
  * This is a simplified version of the built-in Java StringReader interface, which has more methods for
@@ -14,6 +16,6 @@ import java.io.*;
  * network, or whatever you want.
  */
 public interface StringRead {
-	public String read() throws IOException;
+	public Message read() throws IOException;
 	public void close() throws IOException;
 }
