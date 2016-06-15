@@ -78,6 +78,19 @@ public class PlayerRegistry {
 		return null;
 	}
 	
+	public ArrayList<Player> playerAtLocation(Location l) {
+		
+		ArrayList<Player> plAt = new ArrayList();
+		for(Player key: registry.values())
+		{
+			if(l == key.getLocation())
+			{
+				plAt.add(key);
+			}
+		}
+		return plAt;
+	}
+	
 	public boolean setPlayerName(String s, Player p)
 	{
 		for(int i = 0; playerList.size() > i; i++)

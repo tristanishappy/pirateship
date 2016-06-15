@@ -50,6 +50,7 @@ public class Game {
 		this.players = Q.getPlayerRegistry();
 		Player p;
 		while(true) {
+			
 			while(Q.inIsEmpty())
 			{
 				try {
